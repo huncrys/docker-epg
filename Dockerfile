@@ -1,4 +1,4 @@
-FROM node:20.13.1-alpine
+FROM node:20.15.0-alpine
 
 RUN    apk --no-cache --update add bash curl nginx nginx-mod-http-fancyindex tzdata \
     && wget -qO/tmp/source.tar.gz "https://oaklab.hu/crys/epg/-/archive/master/epg-master.tar.gz" \
