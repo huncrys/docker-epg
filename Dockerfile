@@ -10,6 +10,8 @@ RUN    apk --no-cache --update add bash curl nginx nginx-mod-http-fancyindex tzd
 
 WORKDIR /app
 
+ENV NPM_CONFIG_LOGLEVEL=silent
+
 COPY ./nginx.default.conf /etc/nginx/http.d/default.conf
 
 CMD ["nginx", "-g", "daemon off;"]
